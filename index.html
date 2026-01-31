@@ -41,11 +41,11 @@
         </div>
       </div>
 
-      <nav class="Menu" id="menu">
-        <a href="#Home" class="active">home</a>
-        <a href="#About">about</a>
-        <a href="#Courses">courses</a>
-        <a href="#Gallery">gallery</a>
+      <nav class="menu" id="menu">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#courses">Courses</a>
+        <a href="#gallery">Gallery</a>
       </nav>
 
       <div class="nav-actions">
@@ -290,21 +290,32 @@
         </div>
       </div>
 
-      <form class="contact-form">
-        <input type="text" placeholder="Your Name" required>
-        <input type="tel" placeholder="Phone Number" required>
-        <select required>
-          <option value="">Select Course</option>
-          <option>PGDCA</option>
-          <option>DCA</option>
-          <option>BCA</option>
-          <option>MS Office</option>
-          <option>Tally</option>
-          <option>Photoshop</option>
-        </select>
-        <textarea rows="4" placeholder="Message"></textarea>
-        <button type="submit" class="btn btn-dark">Submit Enquiry</button>
-      </form>
+      <form class="contact-form" 
+      action="https://formsubmit.co/B.sinha1994@gmail.com" 
+      method="POST">
+
+  <!-- Settings -->
+  <input type="hidden" name="_subject" value="New Enquiry - Lakshya Computer Mudhipar">
+  <input type="hidden" name="_captcha" value="false">
+  <input type="hidden" name="_template" value="table">
+
+  <input type="text" name="name" placeholder="Your Name" required>
+  <input type="tel" name="phone" placeholder="Phone Number" required>
+
+  <select name="course" required>
+    <option value="">Select Course</option>
+    <option>PGDCA</option>
+    <option>DCA</option>
+    <option>BCA</option>
+    <option>MS Office</option>
+    <option>Tally</option>
+    <option>Photoshop</option>
+  </select>
+
+  <textarea name="message" rows="4" placeholder="Message"></textarea>
+
+  <button type="submit" class="btn btn-dark">Submit Enquiry</button>
+</form>
     </div>
   </section>
 
@@ -329,6 +340,4 @@
 
   <script src="script.js"></script>
 </body>
-
 </html>
-
